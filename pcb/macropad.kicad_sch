@@ -456,7 +456,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LED:WS2812B"
+		(symbol "SK6812MINI-E:SK6812MINI-E"
 			(pin_names
 				(offset 0.254)
 			)
@@ -466,7 +466,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
-				(at 5.08 5.715 0)
+				(at -3.556 5.842 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -476,18 +476,20 @@
 					(justify right bottom)
 				)
 			)
-			(property "Value" "WS2812B"
+			(property "Value" "SK6812MINI-E"
 				(at 1.27 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
 					)
 					(justify left top)
 				)
 			)
-			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(property "Footprint" "SK6812MINI-E - 3.2x2.8x1.78mm"
 				(at 1.27 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -499,7 +501,7 @@
 					(justify left top)
 				)
 			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
 				(at 2.54 -9.525 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -522,7 +524,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "RGB LED NeoPixel addressable"
+			(property "ki_keywords" "RGB LED NeoPixel Mini addressable"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -533,7 +535,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+			(property "ki_fp_filters" "LED*SK6812MINI*PLCC*3.5x3.5mm*P1.75mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -544,7 +546,7 @@
 					)
 				)
 			)
-			(symbol "WS2812B_0_0"
+			(symbol "SK6812MINI-E_0_0"
 				(text "RGB"
 					(at 2.286 -4.191 0)
 					(effects
@@ -554,7 +556,18 @@
 					)
 				)
 			)
-			(symbol "WS2812B_0_1"
+			(symbol "SK6812MINI-E_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(polyline
 					(pts
 						(xy 1.27 -2.54) (xy 1.778 -2.54)
@@ -639,19 +652,16 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
+			)
+			(symbol "SK6812MINI-E_1_1"
+				(text "NOT SK6812MINI"
+					(at 8.636 6.604 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
 					)
 				)
-			)
-			(symbol "WS2812B_1_1"
 				(pin power_in line
 					(at 0 7.62 270)
 					(length 2.54)
@@ -1764,7 +1774,7 @@
 		(uuid "60062b0f-cf99-4948-8a3d-40bb6de75f79")
 	)
 	(no_connect
-		(at 38.1 161.29)
+		(at 36.83 161.29)
 		(uuid "672f07e3-b2ad-4766-a0e4-13be12b39a6e")
 	)
 	(no_connect
@@ -1919,7 +1929,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 161.29) (xy 59.69 161.29)
+			(xy 52.07 161.29) (xy 59.69 161.29)
 		)
 		(stroke
 			(width 0)
@@ -2009,6 +2019,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 161.29) (xy 38.1 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7904fdb3-85ea-4ce9-8282-fa1f7166ae7f")
+	)
+	(wire
+		(pts
 			(xy 67.31 147.32) (xy 67.31 153.67)
 		)
 		(stroke
@@ -2049,7 +2069,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 147.32) (xy 67.31 147.32)
+			(xy 44.45 147.32) (xy 67.31 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2139,7 +2159,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 173.99) (xy 67.31 173.99)
+			(xy 44.45 173.99) (xy 67.31 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2179,7 +2199,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 168.91) (xy 45.72 173.99)
+			(xy 44.45 168.91) (xy 44.45 173.99)
 		)
 		(stroke
 			(width 0)
@@ -2199,7 +2219,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 153.67) (xy 45.72 147.32)
+			(xy 44.45 153.67) (xy 44.45 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2738,6 +2758,98 @@
 		)
 	)
 	(symbol
+		(lib_id "SK6812MINI-E:SK6812MINI-E")
+		(at 104.14 161.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35582c78-f8be-4d72-bf99-fd5230cd8819")
+		(property "Reference" "D8"
+			(at 129.54 154.8698 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 129.54 157.4099 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
+			(at 105.41 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 106.68 170.815 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 104.14 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "32c79ef5-29d5-466e-9013-565a28dbb4d0")
+		)
+		(pin "3"
+			(uuid "5d82fa24-a132-4e23-9ec9-1dbf7f35434a")
+		)
+		(pin "2"
+			(uuid "69f47723-3753-4b51-8c74-de93e73756c9")
+		)
+		(pin "1"
+			(uuid "38ea2e2c-fcae-4b57-b83d-45bbb74a716e")
+		)
+		(instances
+			(project "macropad"
+				(path "/e8b92e6a-27de-468e-bb83-9c6c04204bf5"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 83.82 73.66 0)
 		(unit 1)
@@ -2816,8 +2928,8 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 85.09 161.29 0)
+		(lib_id "SK6812MINI-E:SK6812MINI-E")
+		(at 44.45 161.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2825,9 +2937,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4a757093-18ac-4bc7-98a4-d236db419f89")
-		(property "Reference" "D10"
-			(at 90.932 151.892 0)
+		(uuid "4fbc69ea-a4c4-48ac-b233-c28358870e2d")
+		(property "Reference" "D3"
+			(at 69.85 154.8698 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2836,18 +2948,20 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
-			(at 90.932 154.432 0)
+		(property "Value" "SK6812MINI-E"
+			(at 52.324 168.656 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 86.36 168.91 0)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
+			(at 45.72 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2858,8 +2972,8 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 87.63 170.815 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 46.99 170.815 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2871,7 +2985,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 85.09 161.29 0)
+			(at 44.45 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2881,110 +2995,22 @@
 				)
 			)
 		)
-		(pin "4"
-			(uuid "00b20bc8-8fdf-4429-9147-db84c80c47f9")
-		)
 		(pin "1"
-			(uuid "1d649bd6-e4f9-4a33-91a4-e29e1fb7004c")
-		)
-		(pin "2"
-			(uuid "756a8afd-3b09-4593-ab29-460216b9f9e1")
+			(uuid "c97190a6-1fe0-48d5-89bb-cd2e89591e09")
 		)
 		(pin "3"
-			(uuid "392e41bd-f964-4911-8e17-3614b4aea5c9")
+			(uuid "828ce978-b67b-4f14-9cec-33cefc4eeb51")
+		)
+		(pin "2"
+			(uuid "9438f10f-ac82-424b-bd87-db5ebcf55712")
+		)
+		(pin "4"
+			(uuid "e563321b-52a4-4489-8ae7-b108e8ec5534")
 		)
 		(instances
 			(project "macropad"
 				(path "/e8b92e6a-27de-468e-bb83-9c6c04204bf5"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 104.14 161.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4efecb97-dfa5-472b-9498-efbc2f2304e6")
-		(property "Reference" "D8"
-			(at 115.57 154.8698 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 115.57 157.4098 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 105.41 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 106.68 170.815 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 104.14 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "21dfe305-fe2e-4ac1-a32f-a762cef0639b")
-		)
-		(pin "1"
-			(uuid "e2c18557-f294-4478-84d7-42d0f085012d")
-		)
-		(pin "2"
-			(uuid "b240c3c1-50f1-4dbe-b910-cc6f9836c0b3")
-		)
-		(pin "3"
-			(uuid "87a596b0-c553-4ead-a432-53a8de410cde")
-		)
-		(instances
-			(project "macropad"
-				(path "/e8b92e6a-27de-468e-bb83-9c6c04204bf5"
-					(reference "D8")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -3276,8 +3302,8 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 45.72 161.29 0)
+		(lib_id "SK6812MINI-E:SK6812MINI-E")
+		(at 67.31 161.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3286,9 +3312,10 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8692e849-1ad0-4f79-9488-87c580d0f754")
-		(property "Reference" "D7"
-			(at 57.15 154.8698 0)
+		(uuid "8eec8167-643f-4728-804e-7e69aae2298c")
+		(property "Reference" "D6"
+			(at 92.71 154.8698 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3297,18 +3324,21 @@
 				)
 			)
 		)
-		(property "Value" "WS2812B"
-			(at 57.15 157.4098 0)
+		(property "Value" "SK6812MINI-E"
+			(at 92.71 157.4099 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 46.99 168.91 0)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
+			(at 68.58 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3319,8 +3349,8 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 48.26 170.815 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 69.85 170.815 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3332,7 +3362,99 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 45.72 161.29 0)
+			(at 67.31 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "098ed2a4-31ac-46bc-b1dc-93816f55c387")
+		)
+		(pin "2"
+			(uuid "fc512d45-60fb-4d3d-bc79-23fc81d9f6b1")
+		)
+		(pin "1"
+			(uuid "3c10ac4e-4215-44a9-8eb3-9beea3c48026")
+		)
+		(pin "4"
+			(uuid "c7221a09-a265-4cee-9e76-d58bef0b3941")
+		)
+		(instances
+			(project "macropad"
+				(path "/e8b92e6a-27de-468e-bb83-9c6c04204bf5"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SK6812MINI-E:SK6812MINI-E")
+		(at 85.09 161.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98bfb54e-d0e3-4ea1-9a12-c88df7b9d6f3")
+		(property "Reference" "D7"
+			(at 110.49 154.8698 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812MINI-E"
+			(at 110.49 157.4099 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_SK6812MINI-E_3.2x2.8mm_P1.5mm_ReverseMount"
+			(at 86.36 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 87.63 170.815 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 85.09 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3343,16 +3465,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "0c9dc427-7157-4802-a4b1-f1a9b35cae43")
-		)
-		(pin "1"
-			(uuid "603febf4-6741-4e5c-91e1-59229dd6700e")
-		)
-		(pin "2"
-			(uuid "6b7cb95d-c64a-40d9-8c96-ced0f8b4b03c")
+			(uuid "8a4a983e-61b6-4699-8483-2c1f54faa34f")
 		)
 		(pin "3"
-			(uuid "cec67ad8-0471-4fd0-a30f-e185caf8fd14")
+			(uuid "87779f06-1ad3-40ce-8368-dd168789b762")
+		)
+		(pin "2"
+			(uuid "d1586823-b671-4f6b-9a65-23dfd72e8b70")
+		)
+		(pin "1"
+			(uuid "a043b378-c433-4333-a08e-32f0bb05c6c4")
 		)
 		(instances
 			(project "macropad"
@@ -4039,93 +4161,6 @@
 			(project "macropad"
 				(path "/e8b92e6a-27de-468e-bb83-9c6c04204bf5"
 					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 67.31 161.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f3a710ac-56a7-4c7c-a2ce-aefc7a839628")
-		(property "Reference" "D9"
-			(at 72.644 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 72.644 154.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 68.58 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 69.85 170.815 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 67.31 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "d285f11a-20d0-473c-ba0d-9fe07fbaf254")
-		)
-		(pin "1"
-			(uuid "1451d91a-cefe-468c-b926-9948395123ba")
-		)
-		(pin "2"
-			(uuid "54419c3a-3bb9-4443-afcd-d6c046e9785a")
-		)
-		(pin "3"
-			(uuid "73e98238-2055-40d1-8470-03857c05b1d9")
-		)
-		(instances
-			(project "macropad"
-				(path "/e8b92e6a-27de-468e-bb83-9c6c04204bf5"
-					(reference "D9")
 					(unit 1)
 				)
 			)
