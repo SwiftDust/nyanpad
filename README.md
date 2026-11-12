@@ -9,7 +9,7 @@ My macropad, built for [Hackpad](https://hackpad.hackclub.com)! It features LED 
 <img width="735" height="713" alt="image" src="https://github.com/user-attachments/assets/f1dca91d-6705-4b55-bc2a-4c25418b8fda" />
 
 ## PCB
-<img width="484" height="327" alt="image" src="https://github.com/user-attachments/assets/4b191f05-5f47-4d6b-a5c2-fe90ddae721b" />
+<img width="913" height="614" alt="image" src="https://github.com/user-attachments/assets/347ec2be-42aa-4c85-b337-65c835491492" />
 <img width="830" height="583" alt="image" src="https://github.com/user-attachments/assets/30a02071-8fb0-4da2-b88d-0754c7cc1e36" />
 
 ## BOM
