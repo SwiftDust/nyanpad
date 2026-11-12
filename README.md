@@ -2,7 +2,8 @@
 
 My macropad, built for [Hackpad](https://hackpad.hackclub.com)! It features LED backlighting, an OLED screen and 4 keys to control your music :)
 
-<img width="868" height="619" alt="Schermafdruk_20261031_230231" src="https://github.com/user-attachments/assets/7a04f530-7fe8-4812-aa54-42c0a7e49251" />
+<img width="1028" height="732" alt="Schermafdruk_20261108_210945" src="https://github.com/user-attachments/assets/bff2a10c-575d-4ae9-93db-a7dedbf3deab" />
+
 
 ## Schematic
 <img width="735" height="713" alt="image" src="https://github.com/user-attachments/assets/f1dca91d-6705-4b55-bc2a-4c25418b8fda" />
