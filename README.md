@@ -23,3 +23,4 @@ My macropad, built for [Hackpad](https://hackpad.hackclub.com)! It features LED 
 | 4x | SK6812 MINI-E LEDs  | 0,41 | https://www.lcsc.com/product-detail/C5149201.html?s_z=s_q_SK6812MINI-E |
 | 1x | 0,91" 128x32 OLED display | 2,27 | https://www.lcsc.com/product-detail/C5248081.html?s_z=s_c_LCD%252C%2520OLED%252C%2520Graphic |
 | 1x | XIAO RP2040 | 3,90 | https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html |
+| | Total | 18,44 | |
