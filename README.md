@@ -23,4 +23,8 @@ My macropad, built for [Hackpad](https://hackpad.hackclub.com)! It features LED 
 | 4x | SK6812 MINI-E LEDs  | 0,41 | https://www.lcsc.com/product-detail/C5149201.html?s_z=s_q_SK6812MINI-E |
 | 1x | 0,91" 128x32 OLED display | 2,27 | https://www.lcsc.com/product-detail/C5248081.html?s_z=s_c_LCD%252C%2520OLED%252C%2520Graphic |
 | 1x | XIAO RP2040 | 3,90 | https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html |
-| | Total | 18,44 | |
+| 1x | PCB | 4,00 | https://jlcpcb.com/ |
+| | Total | 22,44 | |
+| | Total with shipping* | 49,73
+
+*Shipping: 2,79 for shipping JLCPCB to LCSC, 13,90 to ship that order to me, 8,16 for the SEED XIAO RP2040 and 2,44 for the Aliexpress order. Printing Legion not yet included.
